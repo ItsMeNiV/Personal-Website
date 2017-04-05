@@ -6,7 +6,7 @@ body, html {
 
 .parallax-lead {
     background-image: url("../images/kb-bg.jpg");
-    height: 100%;
+    height: 140%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,12 +15,22 @@ body, html {
 
 .maintitle {
     display: block;
-    position: fixed;
     font-family: 'Roboto', sans-serif;
     font-size: 7vw;
     color: #FAFAFA;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     pointer-events: none;
+    text-align: center;
+}
+
+.subtitle {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    color: #FAFAFA;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    pointer-events: none;
+    text-align: center;
 }
 
 .maintitlefooter {
@@ -46,6 +56,7 @@ body, html {
 
 .aboutme {
     height: auto;
+    margin: 10px;
 }
 
 
@@ -80,6 +91,23 @@ body, html {
 
 .skills{
     height: 1000px;
+}
+
+.skills ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+.skills li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: #FAFAFA;
+    background: #424242;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
 }
 
 
@@ -156,4 +184,14 @@ body, html {
   25%, 75% { bottom:6px; }
   50%      { bottom:7px; }
   100%     {bottom:0;}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
