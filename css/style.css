@@ -195,3 +195,29 @@ body, html {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+
+
+
+/* Mobile specific stuff */
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax-lead {
+        background-attachment: scroll;
+    }
+
+    .parallax-aboutme {
+        background-attachment: scroll;
+    }
+
+    .parallax-experience {
+        background-attachment: scroll;
+    }
+
+    .parallax-skills {
+        background-attachment: scroll;
+    }
+
+    .parallax-contactme {
+        background-attachment: scroll;
+    }
+}
