@@ -3,6 +3,13 @@ body, html {
     font-family: 'Lato', sans-serif;
 }
 
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Lead / Maintitle */
 
 .leadtext {
@@ -13,10 +20,6 @@ body, html {
 .parallax-lead {
     background-image: url("../images/kb-bg.jpg");
     height: 145%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .maintitle {
@@ -49,11 +52,7 @@ body, html {
 
 .parallax-aboutme {
     background-image: url("../images/coffee-bg.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 80%;
 }
 
 .aboutme {
@@ -66,11 +65,7 @@ body, html {
 
 .parallax-experience {
     background-image: url("../images/kor-bg.jpg");
-    height: 70%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 50%;
 }
 
 .experience{
@@ -83,11 +78,7 @@ body, html {
 
 .parallax-skills {
     background-image: url("../images/coffee-bg.jpg");
-    height: 70%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 50%;
 }
 
 .skills{
@@ -117,11 +108,7 @@ body, html {
 
 .parallax-contactme {
     background-image: url("../images/pc-bg.jpg");
-    height: 70%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 50%;
 }
 
 .contactme {
@@ -135,6 +122,37 @@ body, html {
     height: 100px;
     color: #FAFAFA;
     background-color: #424242
+}
+
+.social {
+    text-align: right;
+
+    
+
+    
+
+    
+}
+
+.social ul {
+        margin: 5px 0 0 0;
+        padding: 0;
+}
+
+.social li {
+        display: inline-block;
+        font-size: 1.25em;
+        list-style: none;
+}
+
+.social a {
+        display: block;
+        color: #FAFAFA;
+        padding: 10px;
+}
+
+.social a:hover {
+            color: #424242;
 }
 
 
