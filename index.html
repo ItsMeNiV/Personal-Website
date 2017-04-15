@@ -22,7 +22,21 @@
 </head>
 
 <body>
-    <div class="parallax parallax-lead">
+    <div class="mobile-menu-open">
+        <span class="clickable glyphicon glyphicon-menu-hamburger" onclick="openMobileMenu()"></span>
+    </div>
+    <div class="mobile-menu">
+        <div class="clickable mobile-menu-close" onclick="closeMobileMenu()">
+            <span>Close</close> <span class="glyphicon glyphicon-remove" style="top: 3px"></span>
+        </div>
+        <ul>
+            <li class="clickable" onclick="closeMobileMenu(); moveTo('about')">About me</li>
+            <li class="clickable" onclick="closeMobileMenu(); moveTo('experience')">Experience</li>
+            <li class="clickable" onclick="closeMobileMenu(); moveTo('skills')">Skills</li>
+            <li class="clickable" onclick="closeMobileMenu(); moveTo('contact')">Contact Me</li>
+        </ul>
+    </div>
+    <div class="parallax parallax-lead" id="top">
         <div class="leadtext">
             <span class="centered noselect">
                 <h1 class="maintitle">Yannik Hodel</h1>
@@ -34,7 +48,7 @@
         </div>
     </div>
 
-    <div class="aboutme content">
+    <div class="aboutme content" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -61,7 +75,7 @@
 
     <div class="parallax parallax-experience"></div>
 
-    <div class="experience content">
+    <div class="experience content" id="experience">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -73,7 +87,7 @@
 
     <div class="parallax parallax-skills"></div>
 
-    <div class="skills content">
+    <div class="skills content" id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -101,7 +115,7 @@
 
     <div class="parallax parallax-contactme"></div>
 
-    <div class="contactme content">
+    <div class="contactme content" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -125,7 +139,7 @@
                     </p>
                 </div>
                 <div class="col-sm-2 top">
-                    <!-- Middle of footer -->
+                    <span class="clickable glyphicon glyphicon-chevron-up" onclick="moveTo('top')"></span>
                 </div>
                 <div class="col-sm-5 social">
                     <!-- Right side of footer -->

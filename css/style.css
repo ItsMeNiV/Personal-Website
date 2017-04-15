@@ -119,40 +119,9 @@ body, html {
 
 /* Footer */
 .sitefooter {
-    height: 100px;
+    height: 40px;
     color: #FAFAFA;
     background-color: #424242
-}
-
-.social {
-    text-align: right;
-
-    
-
-    
-
-    
-}
-
-.social ul {
-        margin: 5px 0 0 0;
-        padding: 0;
-}
-
-.social li {
-        display: inline-block;
-        font-size: 1.25em;
-        list-style: none;
-}
-
-.social a {
-        display: block;
-        color: #FAFAFA;
-        padding: 10px;
-}
-
-.social a:hover {
-            color: #424242;
 }
 
 
@@ -165,6 +134,10 @@ body, html {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 .ghostbutton {
@@ -251,7 +224,55 @@ body, html {
 
 /* Mobile specific stuff */
 
-@media only screen and (max-device-width: 1024px) {
+.mobile-menu-open {
+    display: none;
+    right: 10px;
+    top: 5px;
+    z-index: 100;
+    position: fixed;
+    font-size: 6vw;
+    border-spacing: 0px;
+}
+
+.mobile-menu {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-size: 6vw;
+}
+
+.mobile-menu ul {
+    margin-top: 100px;
+    list-style: none;
+    padding: 0;
+    text-align: center
+}
+
+.mobile-menu li {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mobile-menu li:hover {
+    background-color: #EEEEEE;
+}
+
+.mobile-menu-close {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .mobile-menu-open {
+        display: block;
+    }
+
     .parallax-lead {
         background-attachment: scroll;
     }
