@@ -59,6 +59,12 @@ body, html {
     height: auto;
 }
 
+#about-me-heading {
+    opacity: 1;
+}
+#about-me-content {
+    opacity: 1;
+}
 
 
 /* Experience */
@@ -70,6 +76,13 @@ body, html {
 
 .experience{
     height: 200px;
+}
+
+#experience-heading {
+    opacity: 1;
+}
+#experience-content {
+    opacity: 1;
 }
 
 
@@ -102,6 +115,13 @@ body, html {
     font-size: 1.2em;
 }
 
+#skills-heading {
+    opacity: 1;
+}
+#skills-content {
+    opacity: 1;
+}
+
 
 
 /* Contact me */
@@ -113,6 +133,13 @@ body, html {
 
 .contactme {
     height: 500px;
+}
+
+#contact-me-heading {
+    opacity: 1;
+}
+#contact-me-content {
+    opacity: 1;
 }
 
 
