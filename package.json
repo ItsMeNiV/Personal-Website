@@ -1,0 +1,23 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "https://itsmeniv.github.io/Personal-Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsMeNiV/Personal-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsMeNiV/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/ItsMeNiV/Personal-Website#readme"
+}
