@@ -15,7 +15,7 @@ $(document).ready(function(){
       slideInFromLeft($(value));
     })
     .on('exit', function() {
-      $(value).css('opacity', 0);
+      $(value).animate({opacity:0},700);
     });
   });
   $.each(content, function(index, value) {
@@ -24,7 +24,7 @@ $(document).ready(function(){
       slideInFromRight($(value));
     })
     .on('exit', function() {
-      $(value).css('opacity', 0);
+      $(value).animate({opacity:0},700);
     });
   });
 });
