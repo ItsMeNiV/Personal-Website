@@ -60,10 +60,10 @@ body, html {
 }
 
 #about-me-heading {
-    opacity: 1;
+    opacity: 0;
 }
 #about-me-content {
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -79,10 +79,10 @@ body, html {
 }
 
 #experience-heading {
-    opacity: 1;
+    opacity: 0;
 }
 #experience-content {
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -116,10 +116,10 @@ body, html {
 }
 
 #skills-heading {
-    opacity: 1;
+    opacity: 0;
 }
 #skills-content {
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -136,10 +136,10 @@ body, html {
 }
 
 #contact-me-heading {
-    opacity: 1;
+    opacity: 0;
 }
 #contact-me-content {
-    opacity: 1;
+    opacity: 0;
 }
 
 
