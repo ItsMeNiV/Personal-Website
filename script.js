@@ -1,8 +1,32 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
-        $(".leadtext").css("opacity", 1 - $(window).scrollTop() / 250);
-        $(".maintitlefooter").css("opacity", 1 - $(window).scrollTop() / 250);
+  $('.leadtext').css('opacity', 1 - $(window).scrollTop() / 250);
+  $('.maintitlefooter').css('opacity', 1 - $(window).scrollTop() / 250);
+
+  $(window).scroll(function(){
+    $('.leadtext').css('opacity', 1 - $(window).scrollTop() / 250);
+    $('.maintitlefooter').css('opacity', 1 - $(window).scrollTop() / 250);
+  });
+
+  var headers = ['#about-me-heading', '#experience-header', '#skills-header', '#contact-me-header'];
+  var content = ['#about-me-content', '#experience-content', '#skills-content', '#contact-me-content'];
+  $.each(headers, function(index, value) {
+    inView(value)
+    .on('enter', function() {
+      slideInFromLeft($(value));
+    })
+    .on('exit', function() {
+      $(value).css('opacity', 0);
     });
+  });
+  $.each(content, function(index, value) {
+    inView(value)
+    .on('enter', function() {
+      slideInFromRight($(value));
+    })
+    .on('exit', function() {
+      $(value).css('opacity', 0);
+    });
+  });
 });
 
 function moveTo(location) {
@@ -30,4 +54,14 @@ function closeMobileMenu() {
 	$('.mobile-menu-open').css('display', 'block');
 	$('.mobile-menu-close').css('display', 'none');
 	$('.mobile-menu').css('display', 'none');
+}
+
+function slideInFromLeft(elem) {
+  elem.css({'position':'relative','opacity': 0, 'left':'-=100'});
+  elem.animate({left:0, opacity:1},700);
+}
+
+function slideInFromRight(elem) {
+  elem.css({'position':'relative','opacity': 0, 'left':'+=100'});
+  elem.animate({left:0, opacity:1},700);
 }
