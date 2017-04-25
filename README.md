@@ -1,3 +1,3 @@
 # Personal-Website
 
-https://itsmeniv.github.io/Personal-Website
+https://niv-personal-website.herokuapp.com/
