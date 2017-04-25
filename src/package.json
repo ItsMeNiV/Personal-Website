@@ -1,0 +1,17 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "gulp": "^3.9.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
