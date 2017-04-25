@@ -4,21 +4,21 @@ var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
 
 gulp.task('default', function() {
-  gulp.src(['site/index.html'])
-        .pipe(gulp.dest('../'))
-  gulp.src(['site/css/**/*'])
-        .pipe(gulp.dest('../static/css/'))
-  gulp.src(['site/images/**/*'])
-        .pipe(gulp.dest('../static/images/'))
+  gulp.src(['src/index.html'])
+        .pipe(gulp.dest('dist/'))
+  gulp.src(['src/css/**/*'])
+        .pipe(gulp.dest('dist/static/css/'))
+  gulp.src(['src/images/**/*'])
+        .pipe(gulp.dest('dist/static/images/'))
   gulp.start('webpack');
 });
 
 gulp.task("webpack", function(callback) {
     // run webpack
     webpack({
-        entry: './site/app.js',
+        entry: './src/app.js',
         output: {
-          filename: '../bundle.js'
+          filename: 'dist/bundle.js'
         }
     }, function(err, stats) {
         if(err) throw new gutil.PluginError("webpack", err);
