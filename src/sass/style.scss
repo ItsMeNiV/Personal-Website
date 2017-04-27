@@ -1,0 +1,328 @@
+$maincolor-white: #FAFAFA;
+$maincolor-gray: #424242;
+$accentcolor-blue: #3498db;
+$text-outline-black: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+$text-outline-gray: 1px 0 0 $maincolor-gray, 0 -1px 0 $maincolor-gray, 0 1px 0 $maincolor-gray, -1px 0 0 $maincolor-gray;
+
+body, html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Lead / Maintitle */
+
+.leadtext {
+    font-family: 'Pacifico';
+    text-shadow: $text-outline-black;
+}
+
+.parallax-lead {
+    background-image: url("../images/kb-bg.jpg");
+    height: 145%;
+}
+
+.maintitle {
+    display: block;
+    font-size: 7vw;
+    color: $maincolor-white;
+    pointer-events: none;
+    text-align: center;
+}
+
+.subtitle {
+    display: block;
+    font-size: 3vw;
+    color: $maincolor-white;
+    pointer-events: none;
+    text-align: center;
+}
+
+.maintitlefooter {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $maincolor-white;
+    font-size: 4vw;
+}
+
+/* About me */
+
+.parallax-aboutme {
+    background-image: url("../images/coffee-bg.jpg");
+    height: 80%;
+}
+
+.aboutme {
+    height: auto;
+}
+
+#about-me-heading {
+    opacity: 0;
+}
+#about-me-content {
+    opacity: 0;
+}
+
+
+/* Experience */
+
+.parallax-experience {
+    background-image: url("../images/kor-bg.jpg");
+    height: 50%;
+}
+
+.experience{
+    height: 200px;
+}
+
+#experience-heading {
+    opacity: 0;
+}
+#experience-content {
+    opacity: 0;
+}
+
+
+
+/* Skills */
+
+.parallax-skills {
+    background-image: url("../images/coffee-bg.jpg");
+    height: 50%;
+}
+
+.skills{
+    height: 200px;
+    ul {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 800px;
+    }
+    li {
+      display: inline-block;
+      margin: 7px;
+      padding: 5px 10px;
+      color: $maincolor-white;
+      background: $maincolor-gray;
+      list-style: none;
+      cursor: default;
+      font-size: 1.2em;
+    }
+}
+
+#skills-heading {
+    opacity: 0;
+}
+#skills-content {
+    opacity: 0;
+}
+
+
+
+/* Contact me */
+
+.parallax-contactme {
+    background-image: url("../images/pc-bg.jpg");
+    height: 50%;
+}
+
+.contactme {
+    height: 500px;
+}
+
+#contact-me-heading {
+    opacity: 0;
+}
+#contact-me-content {
+    opacity: 0;
+}
+
+
+
+/* Footer */
+.sitefooter {
+    height: 40px;
+    color: $maincolor-white;
+    background-color: $maincolor-gray
+}
+
+
+
+/* Everything else */
+
+.centered {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.ghostbutton {
+    color: $maincolor-gray; 
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid $maincolor-gray; 
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 120px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+
+    &:hover, &:active {
+      color: $maincolor-white;
+      background: $maincolor-gray; 
+      border: 1px solid $maincolor-gray; 
+      text-shadow: $text-outline-gray;
+      font-size: 17px;
+      padding: 7px 12px;
+      margin: 6px 0;
+      margin-right: 12px;
+      display: inline-block;
+      text-decoration: none;
+      min-width: 120px;
+    }
+}
+
+.bounce {
+  position:fixed;
+  bottom:0;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:6px; }
+  50%      { bottom:7px; }
+  100%     {bottom:0;}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 100%;
+      height: 1px;
+      width: 50px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: $accentcolor-blue;
+    }
+}
+
+.content {
+    margin: 10px;
+}
+
+
+
+/* Mobile specific stuff */
+
+.mobile-menu-open {
+    display: none;
+    right: 10px;
+    top: 5px;
+    z-index: 100;
+    position: fixed;
+    font-size: 6vw;
+    border-spacing: 0px;
+}
+
+.mobile-menu {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-size: 6vw;
+
+    ul{
+      margin-top: 100px;
+      list-style: none;
+      padding: 0;
+      text-align: center
+    }
+
+    li {
+    margin-top: 20px;
+    width: 100%;
+      &:hover {
+        background-color: #EEEEEE;
+      }
+    }
+}
+
+.mobile-menu-close {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .mobile-menu-open {
+        display: block;
+    }
+
+    .parallax-lead {
+        background-attachment: scroll;
+    }
+
+    .parallax-aboutme {
+        background-attachment: scroll;
+    }
+
+    .parallax-experience {
+        background-attachment: scroll;
+    }
+
+    .parallax-skills {
+        background-attachment: scroll;
+    }
+
+    .parallax-contactme {
+        background-attachment: scroll;
+    }
+}

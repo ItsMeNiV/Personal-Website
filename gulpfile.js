@@ -16,8 +16,6 @@ gulp.task('watch', function() {
 gulp.task('default', function() {
   gulp.src(['src/index.html'])
         .pipe(gulp.dest('dist/'))
-  gulp.src(['src/css/**/*'])
-        .pipe(gulp.dest('dist/static/css/'))
   gulp.src(['src/images/**/*'])
         .pipe(gulp.dest('dist/static/images/'))
   gulp.start('compilesass');
@@ -27,8 +25,6 @@ gulp.task('default', function() {
 gulp.task("copysrc", function(callback) {
   gulp.src(['src/index.html'])
         .pipe(gulp.dest('dist/'))
-  gulp.src(['src/css/**/*'])
-        .pipe(gulp.dest('dist/static/css/'))
   gulp.src(['src/images/**/*'])
 });
 
