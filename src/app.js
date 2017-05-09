@@ -51,7 +51,7 @@ function openMobileMenu() {
 
 function closeMobileMenu() {
 	$('.mobile-menu-open').css({'-webkit-transform': 'rotate(0deg)', 'border-spacing': '0'});
-	$('.mobile-menu-open').css('display', 'block');
+	$('.mobile-menu-open').css('display', '');
 	$('.mobile-menu-close').css('display', 'none');
 	$('.mobile-menu').css('display', 'none');
 }

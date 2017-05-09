@@ -101,7 +101,8 @@ body, html {
 }
 
 .skills{
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     ul {
       display: block;
       margin: 0 auto;
@@ -325,4 +326,10 @@ body, html {
     .parallax-contactme {
         background-attachment: scroll;
     }
+}
+
+@media only screen and (min-width: 550px) {
+  .mobile-menu-open {
+        display: none;
+  }
 }
