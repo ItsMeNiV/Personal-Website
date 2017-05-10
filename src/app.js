@@ -9,6 +9,9 @@ $(document).ready(function(){
 
   var headers = ['#about-me-heading', '#experience-header', '#skills-header', '#contact-me-header'];
   var content = ['#about-me-content', '#experience-content', '#skills-content', '#contact-me-content'];
+
+  placeSubtitles();
+
   $.each(headers, function(index, value) {
     inView(value)
     .on('enter', function() {
@@ -28,6 +31,28 @@ $(document).ready(function(){
     });
   });
 });
+
+function placeSubtitles() {
+  var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Enthusiast', 'Korea-Geek'];
+  var positions = [{x: 800, y: 515}, {x: 118, y: 70}, {x: 97, y: 396}, {x: 544, y: 1}]
+
+  $.each(shuffleArray(subtitletexts), function(index, value) {
+    var xPos = positions[index].x;
+    var yPos = positions[index].y;
+
+    $('#subtitles').append("<h2 class=\"subtitle\" style=\"left: " + xPos + "px; top: " + yPos + "px\">" + value + "</h2>");    
+  });
+}
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
 
 function moveTo(location) {
 	$('html, body').animate({

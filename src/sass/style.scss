@@ -37,11 +37,11 @@ body, html {
 }
 
 .subtitle {
-    display: block;
     font-size: 3vw;
     color: $maincolor-white;
     pointer-events: none;
     text-align: center;
+    position: fixed;
 }
 
 .maintitlefooter {
