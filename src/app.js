@@ -91,8 +91,6 @@ function slideInFromRight(elem) {
   elem.animate({left:0, opacity:1},700);
 }
 
-window.slideInFromRight = slideInFromRight
-window.slideInFromLeft = slideInFromLeft
 window.closeMobileMenu = closeMobileMenu
 window.openMobileMenu = openMobileMenu
 window.moveTo = moveTo
