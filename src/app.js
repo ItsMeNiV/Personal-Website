@@ -18,7 +18,7 @@ $(document).ready(function(){
       slideInFromLeft($(value));
     })
     .on('exit', function() {
-      $(value).animate({opacity:0},700);
+      $(value).css('opacity', '0');
     });
   });
   $.each(content, function(index, value) {
@@ -27,8 +27,15 @@ $(document).ready(function(){
       slideInFromRight($(value));
     })
     .on('exit', function() {
-      $(value).animate({opacity:0},700);
+      $(value).css('opacity', '0');
     });
+  });
+  inView('.ghostbutton')
+  .on('enter', function() {
+    $('.ghostbutton').animate({opacity:1},200);
+  })
+  .on('exit', function() {
+    $('.ghostbutton').css('opacity', '0');
   });
 });
 
