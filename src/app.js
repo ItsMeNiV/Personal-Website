@@ -9,8 +9,17 @@ $(document).ready(function(){
 
   var headers = ['#about-me-heading', '#experience-header', '#skills-header', '#contact-me-header'];
   var content = ['#about-me-content', '#experience-content', '#skills-content', '#contact-me-content'];
+  var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Enthusiast', 'Korea-Geek'];
 
-  placeSubtitles();
+  var counter = 0;
+  setInterval(placeSubtitles, 2500);
+  function placeSubtitles() {
+    counter++;
+    $('#subtitle').text(subtitletexts[counter]);
+    if (counter >= subtitletexts.length) {
+      counter = 0;
+    }
+  }
 
   $.each(headers, function(index, value) {
     inView(value)
@@ -38,18 +47,6 @@ $(document).ready(function(){
     $('.ghostbutton').css('opacity', '0');
   });
 });
-
-function placeSubtitles() {
-  var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Enthusiast', 'Korea-Geek'];
-  var positions = [{x: 800, y: 515}, {x: 118, y: 70}, {x: 97, y: 396}, {x: 544, y: 1}]
-
-  $.each(shuffleArray(subtitletexts), function(index, value) {
-    var xPos = positions[index].x;
-    var yPos = positions[index].y;
-
-    $('#subtitles').append("<h2 class=\"subtitle\" style=\"left: " + xPos + "px; top: " + yPos + "px\">" + value + "</h2>");    
-  });
-}
 
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
