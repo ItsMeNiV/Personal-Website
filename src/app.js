@@ -11,15 +11,17 @@ $(document).ready(function(){
   var content = ['#about-me-content', '#experience-content', '#skills-content', '#contact-me-content'];
   var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Enthusiast', 'Korea-Geek'];
 
-  var counter = 0;
+  var counter = 1;
   setInterval(placeSubtitles, 2500);
   function placeSubtitles() {
-    counter++;
     $('#subtitle').text(subtitletexts[counter]);
+    counter++;
     if (counter >= subtitletexts.length) {
       counter = 0;
     }
   }
+
+  eightBitText('Yannik Hodel', $('.maintitle'));
 
   $.each(headers, function(index, value) {
     inView(value)
@@ -56,6 +58,20 @@ function shuffleArray(array) {
         array[j] = temp;
     }
     return array;
+}
+
+function eightBitText(text, elem) {
+  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' '];
+  for (var i = 0, len = text.length; i < len; i++) {
+    var currentText = elem.text();
+    $.each(alphabet, function(index, value) {
+      elem.text(currentText + alphabet[index]);
+      if(elem.text().slice(-1) === text[i]) {
+        elem.text(text.slice(0, i+1));
+        return false;
+      }
+    });
+  }
 }
 
 function moveTo(location) {

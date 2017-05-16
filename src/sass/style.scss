@@ -23,7 +23,7 @@ body {
 /* Lead / Maintitle */
 
 .leadtext {
-    font-family: 'Pacifico';
+    font-family: 'Press Start 2P';
     text-shadow: $text-outline-black;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .maintitle {
     display: block;
-    font-size: 7vw;
+    font-size: 4vw;
     color: $maincolor-white;
     pointer-events: none;
     text-align: center;
@@ -42,7 +42,7 @@ body {
 
 .subtitle {
     display: block;
-    font-size: 3vw;
+    font-size: 2vw;
     color: $maincolor-white;
     pointer-events: none;
     text-align: center;
@@ -156,6 +156,7 @@ body {
 
 /* Footer */
 .sitefooter {
+    text-align: center;
     height: 40px;
     color: $maincolor-white;
     background-color: $maincolor-gray
