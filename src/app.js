@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   var headers = ['#about-me-heading', '#experience-header', '#skills-header', '#contact-me-header'];
   var content = ['#about-me-content', '#experience-content', '#skills-content', '#contact-me-content'];
-  var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Enthusiast', 'Korea-Geek'];
+  var subtitletexts = ['Software Developer', 'Gamer', 'Mechanical Keyboard Enthuhsiast', 'Coffee-Lover', 'Korea-Geek'];
 
   var counter = 1;
   setInterval(placeSubtitles, 2500);
