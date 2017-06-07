@@ -14,21 +14,19 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function() {
-  gulp.src(['src/index.html'])
-        .pipe(gulp.dest('dist/'))
-  gulp.src(['src/images/**/*'])
-        .pipe(gulp.dest('dist/static/images/'))
+  gulp.start('copysrc');
   gulp.start('compilesass');
   gulp.start('webpack');
 });
 
-gulp.task("copysrc", function(callback) {
+gulp.task('copysrc', function() {
   gulp.src(['src/index.html'])
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('dist/'));
   gulp.src(['src/images/**/*'])
+        .pipe(gulp.dest('dist/static/images/'));
 });
 
-gulp.task("compilesass", function(callback) {
+gulp.task("compilesass", function() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/static/css'));
