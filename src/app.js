@@ -1,4 +1,7 @@
+var Typewriter = require('typewriter.js');
+
 $(document).ready(function () {
+  writeTitle();
   setScrollOpacity();
   setupInView();
 
@@ -25,6 +28,15 @@ function setScrollOpacity() {
     $('.leadtext').css('opacity', 1 - $(window).scrollTop() / 250);
     $('.maintitlefooter').css('opacity', 1 - $(window).scrollTop() / 250);
   });
+}
+
+function writeTitle() {
+  var tw = new Typewriter('.maintitle', {
+    text: 'Yannik Hodel',
+    interval: 450,
+    words: false
+  });
+  tw.type();
 }
 
 function setupInView() {
