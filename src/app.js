@@ -5,7 +5,7 @@ $(document).ready(function () {
   setScrollOpacity();
   setupInView();
 
-  var subtitletexts = ['Software Developer', 'Gamer', 'Mechanical Keyboard Enthuhsiast', 'Coffee-Lover', 'Korea-Geek'];
+  var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Lover', 'Korea-Geek', 'Mechanical Keyboard Enthuhsiast'];
 
   var counter = 0;
   $('#subtitle').text(subtitletexts[counter]);
