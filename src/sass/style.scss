@@ -23,7 +23,7 @@ body {
 /* Lead / Maintitle */
 
 .leadtext {
-    font-family: 'Press Start 2P';
+    font-family: 'Special Elite', cursive;
     text-shadow: $text-outline-black;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .maintitle {
     display: block;
-    font-size: 4vw;
+    font-size: 7vw;
     color: $maincolor-white;
     pointer-events: none;
     text-align: center;
@@ -43,6 +43,7 @@ body {
 .subtitle {
     display: block;
     font-size: 2vw;
+    font-style: bold;
     color: $maincolor-white;
     pointer-events: none;
     text-align: center;
@@ -69,13 +70,6 @@ body {
     height: auto;
 }
 
-#about-me-heading {
-    opacity: 0;
-}
-#about-me-content {
-    opacity: 0;
-}
-
 
 /* Experience */
 
@@ -86,13 +80,6 @@ body {
 
 .experience{
     height: 200px;
-}
-
-#experience-heading {
-    opacity: 0;
-}
-#experience-content {
-    opacity: 0;
 }
 
 
@@ -125,13 +112,6 @@ body {
     }
 }
 
-#skills-heading {
-    opacity: 0;
-}
-#skills-content {
-    opacity: 0;
-}
-
 
 
 /* Contact me */
@@ -143,13 +123,6 @@ body {
 
 .contactme {
     height: 500px;
-}
-
-#contact-me-heading {
-    opacity: 0;
-}
-#contact-me-content {
-    opacity: 0;
 }
 
 
