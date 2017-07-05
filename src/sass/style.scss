@@ -245,6 +245,7 @@ body {
     position: fixed;
     font-size: 6vw;
     border-spacing: 0px;
+    color: $accentcolor-blue;
 }
 
 .mobile-menu {
@@ -253,8 +254,9 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 6vw;
+    color: $accentcolor-blue;
 
     ul{
       margin-top: 100px;
@@ -267,7 +269,7 @@ body {
     margin-top: 20px;
     width: 100%;
       &:hover {
-        background-color: #EEEEEE;
+        background-color: rgba(0, 0, 0, 0.1);
       }
     }
 }
@@ -277,6 +279,7 @@ body {
     position: fixed;
     right: 10px;
     top: 5px;
+    color: $accentcolor-blue;
 }
 
 @media only screen and (max-width: 550px) {
