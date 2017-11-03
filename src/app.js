@@ -1,4 +1,8 @@
+window.sr = ScrollReveal();
+
 $(document).ready(function () {
+  sr.reveal('.scrollreveal', { duration: 1000 });
+
   setScrollOpacity();
 
   var subtitletexts = ['Software Developer', 'Gamer', 'Coffee-Lover', 'Korea-Geek', 'Mechanical Keyboard Enthuhsiast'];
